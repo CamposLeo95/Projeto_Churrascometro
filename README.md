@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Projeto_Churrascometro (Basic)
+=======
+# Projeto_Churrascometro
+>>>>>>> d314b33184db800008319a641907d57b3519f962
 
 Projeto Criado para treinar logica de programação com JS e outros conceitos inportantes.
 
