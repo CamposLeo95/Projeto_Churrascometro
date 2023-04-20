@@ -25,9 +25,9 @@ let parRefri = document.getElementsByTagName('p')[2]
 let calcCarne = function(adultos, criancas, horas){
     // Carne - 400 gr pessoa + de 6 horas - 650 gr
     if(horas <= 6){
-        return ((adultos + criancas) * 400) / 1000
+        return ((adultos + criancas) * 700) / 1000
     }else{
-        return ((adultos + criancas) * 650) / 1000
+        return ((adultos + criancas) * 1050) / 1000
     }
 }
 
@@ -35,9 +35,9 @@ let calcCerveja = function(adultos, horas){
     // Cerveja - 1200 ml por Pessoa + 6 horas - 2000 ml
     let lataML = 350
     if(horas <= 6){
-        return Math.round((adultos * 1200) / lataML)
+        return Math.round((adultos * 4200) / lataML)
     }else{
-        return Math.round((adultos * 2000) / lataML)
+        return Math.round((adultos * 7500) / lataML)
     }
 }
 
@@ -58,7 +58,7 @@ btnCalcular.addEventListener('click',() => {
     let num_criancas = Number(inputCrianca.value) / 2
     let num_horas = Number(inputHora.value)
 
-    divPar.className = 'conatiner_par' 
+    divPar.className = 'container_par' 
 
     parCarne.innerHTML = calcCarne(num_adultos, num_criancas, num_horas) + ' Kg de Carne'
     parCerveja.innerHTML = calcCerveja(num_adultos, num_horas) + ' Latas Cerveja'

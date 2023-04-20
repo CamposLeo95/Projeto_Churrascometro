@@ -4,27 +4,135 @@
     box-sizing: border-box;    
 }
 
-body{
-    display: flex;
+.container{
     height: 100vh;
+    width: 100vw;
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container{
-    width: 250px;
+.containerChurrasco{
+    width: 70%;
+    display: flex;
+    border-radius: 8px;
+    border: 5px solid white;
+    position: relative;
+}
+
+
+.cardImg{
+    background-image: url(./churrasco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    min-width: 450px;
+    height: 400px;
+    
+}
+
+.cardChurrasco{
+    align-items: center;
+    border: 5px solid white;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(214, 241, 247);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.767);
+    background-image: linear-gradient(45deg, #ffbf36, #fc7405);
     padding: 8px;
+}
+
+.container_par{
+    background: rgba(0, 0, 0, 0.808);
+    width: 90%;
+    max-width: 350px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 400px;
+    top: 80px;
+}
+
+input{
+    border: none;
+    border-radius: 10px;
+    color: rgba(97, 48, 19, 0.884);
+    font-weight: bold;
+    text-align: center;
+    background: #e6e5e5;
+    outline: none;
+
+}
+input:focus{
+    border: 2px solid rgba(97, 48, 19, 0.884);;
 }
 
 input, p{
     margin: 5px;
-    padding: 2px;
+    padding: 15px;
+}
+
+#btn_calcular{
+    font-family: 'Dancing Script', cursive;
+    width: 90%;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.8rem;
+    color: white;
+    background: rgb(97, 47, 19);
+    box-shadow: 1px 1px 3px #000;
+    cursor: pointer;
+    padding: 8px;
+}
+
+#btn_calcular:hover{
+    background: rgba(97, 48, 19, 0.836);
 }
 
 .hide{
     display: none;
+}
+
+@media (max-width:1280px) {
+    .containerChurrasco{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardImg{
+        width: 100%;
+        height: 50%;
+        min-width: 100%;
+        
+    }
+    .cardChurrasco{
+        width: 100%;
+        height: 50%;  
+    }
+
+    .container_par{
+        max-width: 250px;
+        font-weight: bold;
+        top: 80px;
+        left: 200px;
+        width: 90%;
+        background: rgba(97, 48, 19, 0.884);
+    }
+
+    #btn_calcular{
+        width: 100%;
+    }
+}
+
+@media (max-width:810px) {
+    .containerChurrasco{
+        width: 90%;
+    }
 }

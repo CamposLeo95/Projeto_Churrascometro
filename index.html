@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Projeto Churrascometro</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <h2>Churrascometro</h2>
-        <input type="number" id="input_adulto" placeholder="Adultos">
-        <input type="number" id="input_crianca" placeholder="Crianças">
-        <input type="number" id="input_hora" placeholder="Horas">
-        <input type="button" value="Calcular" id="btn_calcular"> 
-        <div class='container_par hide'>
-            <p>3.9 Kg de Carne</p>
-            <p>29 Latas Cerveja</p>
-            <p>5 Garrafas de 2L</p>
-        </div>  
-    </div>  
+        <div class="containerChurrasco">
+
+        <div class="cardImg">
+            <h1></h1>
+        </div>
+    
+        <div class="cardChurrasco">
+                <h2>Churrascometro</h2>
+                <input type="number" id="input_adulto" placeholder="Adultos">
+                <input type="number" id="input_crianca" placeholder="Crianças">
+                <input type="number" id="input_hora" placeholder="Horas">
+                <input type="button" value="Hora do Churrasco!" id="btn_calcular"> 
+                <div class='container_par hide'>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div> 
+        </div>
+    </div> 
 </body>
 </html>
